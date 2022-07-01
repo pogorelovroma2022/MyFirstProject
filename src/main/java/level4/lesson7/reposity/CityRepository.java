@@ -99,7 +99,7 @@ public class CityRepository {
 
     private Connection getConnection() throws IOException, ClassNotFoundException, SQLException {
         Properties properties = new Properties();
-        properties.load(new FileInputStream("config/jdbc.properties"));
+        properties.load(new FileInputStream("src/main/resources/jdbc.properties"));
         // 1
         Class.forName(properties.getProperty("driver-class-name"));
         // 2: url, login, password

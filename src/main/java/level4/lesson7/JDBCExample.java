@@ -15,7 +15,7 @@ public class JDBCExample {
     // 6. Закрыть соединение.
     public static void main(String[] args) throws ClassNotFoundException, SQLException, IOException {
         Properties properties = new Properties();
-        properties.load(new FileInputStream("config/jdbc.properties"));
+        properties.load(new FileInputStream("src/main/resources/jdbc.properties"));
 
         // 1
         Class.forName(properties.getProperty("driver-class-name"));
